@@ -5,60 +5,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Apple Planner App</title>
 </head>
 
 <body>
-    <h1>Apple packet price planner</h1>
-    <div class="apple-buying-data">
-        <h2>Apple buying data</h2>
-        <form action="">
-            <div>
-                <label for="box-price">Cost price for a box of apples</label>
-                <input id="apple-box-price" type="text">
-            </div>
-            <div>
-                <label for="apple-number">Number of apples in the box</label>
-                <input id="number-of-apples" type="text">
-            </div>
-            <div>
-                <label for="packet-size">The parcket size apples are sold</label>
-                <input id="size-of-packet" type="text">
-            </div>
-            <div>
-                <label for="Required-profit">Required profit</label>
-                <input id="profit" type="text">
-            </div>
-            <button>Calculate</button>
-        </form>
-    </div>
+    <div class="apple-app">
+        <h1>Apple packet price planner</h1>
+        <div class="apple-buying-data">
+            <h2>Apple buying data</h2>
+            <form action="">
+                <div>
+                    <label for="box-price">Cost price for a box of apples</label>
+                    <input class="price-of-apple-box" type="text" value="">
+                </div>
+                <div>
+                    <label for="apple-number">Number of apples in the box</label>
+                    <input class="number-of-apples-in-box" type="text" value="">
+                </div>
+                <div>
+                    <label for="packet-size">The parcket size</label>
+                    <input class="packet-size" type="text" value="">
+                </div>
+                <div>
+                    <label for="Required-profit">Required profit</label>
+                    <input class="profit" type="text" value="">
+                </div>
+                <button class="calculateBtn" type="button">Calculate</button>
+            </form>
+        </div>
 
-    <div class="apple-buying-data">
-        <h2>Apple price calculations</h2>
-        <form action="">
-            <div>
-                <label for="packets-number">Number of packets</label>
-                <input id="number-of-packets" type="text">
-            </div>
-            <div>
-                <label for="cost-of-one-apple">Cost price per apple</label>
-                <input id="cost-of-apple" type="text">
-            </div>
-            <div>
-                <label for="cost-per-packet">Cost per packet</label>
-                <input id="packet-cost" type="text">
-            </div>
-            <div>
-                <label for="recommended-packet-price">Required profit</label>
-                <input id="recommended-price-of-packet" type="text">
-            </div>
-            <button>Calculate</button>
-        </form>
-    </div>
+        <div class="apple-buying-data">
+            <h2>Apple price calculations</h2>
+            <form action="">
+                <div>
+                    <label for="packets-number">Number of packets: </label>
+                    <span class="number-of-packets">0</span>
+                </div>
+                <div>
+                    <label for="cost-of-one-apple">Cost price per apple: </label>
+                    <span class="cost-of-apple">0</span>
+                </div>
+                <div>
+                    <label for="cost-per-packet">Cost per packet: </label>
+                    <span class="packet-cost">0</span>
+                </div>
+                <div>
+                    <label for="recommended-packet-price">Recommended packet price: </label>
+                    <span class="recommended-price">0</span>
+                </div>
+            </form>
+        </div>
 
-    <script src="apple-price-planner.js" charset="utf-8"></script>
-	<script src="apple-price-dom.js" charset="utf-8"></script>
-    
+        <script src="apple-price-planner.js" charset="utf-8"></script>
+        <script src="apple-price-dom.js" charset="utf-8"></script>
+        
+    </div>
 </body>
 
 </html>

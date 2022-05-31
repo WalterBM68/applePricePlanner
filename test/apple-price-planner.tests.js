@@ -18,4 +18,28 @@ describe('The Apple Price Planner App', function(){
         applePlanner.setParcketSize(4);
 		assert.equal(4, applePlanner.getParcketSize());
 	});
+    it ('should be able to calculate cost price per apple', function() {
+		const applePlanner = applePrices();
+
+        applePlanner.setBoxPrice(100);
+        applePlanner.setHowManyApplesInBox(10);
+
+		assert.equal(10, applePlanner.costPricePerApple());
+	});
+    it ('should be able to calculate number of packets', function() {
+		const applePlanner = applePrices();
+
+        applePlanner.setHowManyApplesInBox(20);
+        applePlanner.setParcketSize(2);
+
+		assert.equal(10, applePlanner.numberOfPackets());
+	});
+    it ('should be able to calculate cost per packet', function() {
+		const applePlanner = applePrices();
+
+        applePlanner.setHowManyApplesInBox(20);
+        applePlanner.setParcketSize(2);
+
+		assert.equal(40, applePlanner.costPerPacket());
+	});
 })
